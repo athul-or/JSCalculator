@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-screen">
+                <input id="result" type="text" class="form-control">
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="ac" onclick="clearBox()" id="clear">AC</button></td>
+                        <td><button  onclick="displayNum('/')" id="/" class="opt">&divide;</button></td>
+                        <td><button  onclick="displayNum('*')" id="*" class="opt">&times;</button></td>
+                        <td><button  onclick="removeLast()" id="del" class="opt">&#9003;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  onclick="displayNum(7)" id="7">7</button></td>
+                        <td><button  onclick="displayNum(8)" id="8">8</button></td>
+                        <td><button  onclick="displayNum(9)" id="9">9</button></td>
+                        <td><button  onclick="displayNum('-')" id="-" class="opt">&minus;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  onclick="displayNum(4)" id="4">4</button></td>
+                        <td><button  onclick="displayNum(5)" id="5">5</button></td>
+                        <td><button  onclick="displayNum(6)" id="6">6</button></td>
+                        <td><button  onclick="displayNum('+')" id="+" class="opt">&plus;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  onclick="displayNum(1)" id="1">1</button></td>
+                        <td><button  onclick="displayNum(2)" id="2">2</button></td>
+                        <td><button  onclick="displayNum(3)" id="3">3</button></td>
+                        <td rowspan="2"><button onclick="evaluateExpression()" id="equal" class="equal">&equals;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  onclick="displayNum('3.14')" id="pi">&pi;</button></td>
+                        <td><button  onclick="displayNum(0)" id="0">0</button></td>
+                        <td><button  onclick="displayNum('.')" id=".">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
